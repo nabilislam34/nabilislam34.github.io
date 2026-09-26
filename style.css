@@ -129,6 +129,7 @@ footer a {
 
 footer p {
   margin: 0.25rem 0;
+  color: #c8d3e0;
 }
 
 /* Specificity: p is (0,0,1), .lead is (0,1,0), #about .lead is (1,1,0).
