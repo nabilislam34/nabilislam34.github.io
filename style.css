@@ -131,6 +131,22 @@ footer p {
   margin: 0.25rem 0;
 }
 
+/* Specificity: p is (0,0,1), .lead is (0,1,0), #about .lead is (1,1,0).
+   #about .lead wins because it has an ID and the others do not, so the text is green. */
+p {
+  color: #333;
+}
+
+.lead {
+  color: #0a58ca;
+  font-size: 1.15rem;
+}
+
+#about .lead {
+  color: #198754;
+  font-weight: 600;
+}
+
 @media (max-width: 700px) {
   .layout {
     grid-template-columns: 1fr;
