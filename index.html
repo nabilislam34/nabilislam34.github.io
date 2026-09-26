@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabil Islam | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top">
+    <h1>Nabil Islam</h1>
+    <p class="tagline">Computer Science (CSCI) Student at Hunter College</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section id="skills">
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Used For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Python</td><td>Automation, bots, web servers</td></tr>
+            <tr><td>PowerShell</td><td>File watchers, system scripts</td></tr>
+            <tr><td>SQLite</td><td>Full-text search databases</td></tr>
+            <tr><td>AutoHotkey v2</td><td>Desktop GUIs and hotkeys</td></tr>
+            <tr><td>HTML / CSS / JS</td><td>Web front ends</td></tr>
+            <tr><td>Git / GitHub</td><td>Version control</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p class="lead">I am a CSCI major at Hunter College who likes building tools that automate repetitive work.</p>
+        <p>Most of my projects start as a small script to save a few minutes a day and grow into full systems with databases, web interfaces, and background services.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li>
+            <h3>File Pipeline Automation</h3>
+            <p>Python and PowerShell scripts that read embedded file metadata, then automatically tag, sort, and organize files into collections. Background watchers process new files as they arrive.</p>
+          </li>
+          <li>
+            <h3>SQLite Search Database and Web Gallery</h3>
+            <p>A SQLite database with full-text search over thousands of records, served by a Python web server with a JSON API and a browser front end for searching and filtering.</p>
+          </li>
+          <li>
+            <h3>Discord and Telegram Bots</h3>
+            <p>Python bots that take chat commands, queue jobs, call a REST API, and post results back. They run as scheduled tasks that restart automatically.</p>
+          </li>
+          <li>
+            <h3>Script Dashboard</h3>
+            <p>An AutoHotkey v2 desktop dashboard with a live search filter for launching and managing my Python and PowerShell scripts from one window.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer id="contact">
+    <p>GitHub: <a href="https://github.com/nabilislam34">github.com/nabilislam34</a></p>
+    <p>&copy; 2026 Nabil Islam</p>
+  </footer>
+</body>
+</html>
