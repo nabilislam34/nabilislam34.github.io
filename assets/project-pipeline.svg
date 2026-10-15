@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72" />
+      <stop offset="100%" stop-color="#2a5298" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg1)" rx="8"/>
+  <circle cx="90" cy="120" r="38" fill="#ffffff" opacity="0.15" />
+  <circle cx="200" cy="120" r="38" fill="#ffffff" opacity="0.15" />
+  <circle cx="310" cy="120" r="38" fill="#ffffff" opacity="0.15" />
+  <path d="M130 120 L160 120 M240 120 L270 120" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <rect x="74" y="104" width="32" height="32" rx="6" fill="#60a5fa"/>
+  <path d="M82 120 L88 126 L98 114" stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="184" y="104" width="32" height="32" rx="6" fill="#38bdf8"/>
+  <path d="M192 120 L198 126 L208 114" stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="294" y="104" width="32" height="32" rx="6" fill="#34d399"/>
+  <path d="M302 120 L308 126 L318 114" stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="55" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Pipeline Automation</text>
+  <text x="200" y="195" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" text-anchor="middle">Metadata Tagging &amp; Sorting</text>
+</svg>

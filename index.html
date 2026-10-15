@@ -3,29 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nabil Islam | Resume</title>
+  <title>Nabil Islam | Portfolio &amp; Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="top">
-    <img class="avatar" src="assets/profile.svg" alt="Profile photo placeholder">
-    <h1>Nabil Islam</h1>
-    <p class="tagline">Computer Science (CSCI) Student at Hunter College</p>
+  <!-- Task 1: Flexbox Navigation Bar at the top of the page -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <a href="#top" class="nav-logo">Nabil Islam</a>
+    </div>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#coursework">Coursework</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Hero Header -->
+  <section id="top" class="hero">
+    <img class="avatar" src="assets/profile.svg" alt="Profile photo placeholder">
+    <h1 class="hero-title">Nabil Islam</h1>
+    <p class="tagline">Computer Science (CSCI) Student at Hunter College</p>
+  </section>
 
+  <!-- Main Content Layout -->
   <div class="layout">
     <aside class="sidebar">
-      <section id="skills">
+      <section id="skills" class="card-section">
         <h2>Skills</h2>
         <table>
           <thead>
@@ -39,12 +47,13 @@
             <tr><td>PowerShell</td><td>File watchers, system scripts</td></tr>
             <tr><td>SQLite</td><td>Full-text search databases</td></tr>
             <tr><td>AutoHotkey v2</td><td>Desktop GUIs and hotkeys</td></tr>
-            <tr><td>HTML / CSS / JS</td><td>Web front ends</td></tr>
-            <tr><td>Git / GitHub</td><td>Version control</td></tr>
+            <tr><td>HTML / CSS / JS</td><td>Web front ends &amp; layouts</td></tr>
+            <tr><td>Git / GitHub</td><td>Version control &amp; deployment</td></tr>
           </tbody>
         </table>
       </section>
-      <section id="coursework">
+
+      <section id="coursework" class="card-section">
         <h2>Coursework</h2>
         <table>
           <thead>
@@ -56,38 +65,63 @@
             <tr><td>Data Structures and Algorithms II</td></tr>
             <tr><td>Data Structures and Algorithms III</td></tr>
             <tr><td>Operating Systems</td></tr>
+            <tr><td>Practical Web Development</td></tr>
           </tbody>
         </table>
       </section>
     </aside>
 
-    <main>
-      <section id="about">
+    <main class="main-content">
+      <section id="about" class="card-section">
         <h2>About</h2>
         <p class="lead">I am a CSCI major at Hunter College who likes building tools that automate repetitive work.</p>
         <p>Most of my projects start as a small script to save a few minutes a day and grow into full systems with databases, web interfaces, and background services.</p>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul class="project-list">
-          <li>
-            <h3>File Pipeline Automation</h3>
-            <p>Python and PowerShell scripts that read embedded file metadata, then automatically tag, sort, and organize files into collections. Background watchers process new files as they arrive.</p>
-          </li>
-          <li>
-            <h3>SQLite Search Database and Web Gallery</h3>
-            <p>A SQLite database with full-text search over thousands of records, served by a Python web server with a JSON API and a browser front end for searching and filtering.</p>
-          </li>
-          <li>
-            <h3>Discord and Telegram Bots</h3>
-            <p>Python bots that take chat commands, queue jobs, call a REST API, and post results back. They run as scheduled tasks that restart automatically.</p>
-          </li>
-          <li>
-            <h3>Script Dashboard</h3>
-            <p>An AutoHotkey v2 desktop dashboard with a live search filter for launching and managing my Python and PowerShell scripts from one window.</p>
-          </li>
-        </ul>
+      <!-- Task 2: The Grid Showcase (Projects Section) -->
+      <section id="projects" class="card-section">
+        <h2>Projects Showcase</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/project-pipeline.svg" alt="File Pipeline Automation diagram" class="project-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">File Pipeline Automation</h3>
+              <p class="card-desc">Python and PowerShell scripts that read embedded file metadata, then automatically tag, sort, and organize files into collections with live background watchers.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/project-db.svg" alt="SQLite Search Database diagram" class="project-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">SQLite Search Database &amp; Web Gallery</h3>
+              <p class="card-desc">A high-performance SQLite database with full-text search indexing over thousands of records, paired with a Python web server API and interactive browser gallery.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/project-bots.svg" alt="Discord and Telegram Bots diagram" class="project-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Discord &amp; Telegram Bots</h3>
+              <p class="card-desc">Automated Python bots that parse chat commands, queue background jobs, interface with REST APIs, and relay real-time notifications with fault-tolerant supervision.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image-wrap">
+              <img src="assets/project-dashboard.svg" alt="Script Dashboard UI mockup" class="project-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Script Management Dashboard</h3>
+              <p class="card-desc">An AutoHotkey v2 desktop GUI with live fuzzy search filtering for launching, monitoring, and configuring system automation scripts from a single centralized window.</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   </div>
