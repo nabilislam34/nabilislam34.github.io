@@ -211,6 +211,15 @@ p {
   display: block;
 }
 
+/* Phone screenshot variant: taller crop showing top of app UI */
+.card-image-wrap--phone {
+  aspect-ratio: 9 / 10;
+}
+
+.project-img--phone {
+  object-position: top center;
+}
+
 .card-body {
   padding: 1.15rem;
   display: flex;
