@@ -2,7 +2,7 @@
 
 ## 1. flex-direction: row vs column
 
-`row` places items side by side horizontally. `column` stacks them vertically. On my site the navbar uses `row` so my name is on the left and the links are on the right. On mobile I switch it to `column` so the links stack under each other.
+`row` places items side by side horizontally. `column` stacks them vertically. On my site ,the navbar uses `row` so my name is on the left and the links are on the right. On mobile, I switch it to `column` so the links stack under each other.
 
 ## 2. Relative units vs px
 
@@ -13,4 +13,4 @@
 Prompt I used:
 > follow instructions in the pdf and do the assignment [path to WD_HW2 (4).pdf]
 
-The AI initially wrote the mobile nav CSS with `align-items: center` on `.nav-links`, which made each link only as wide as its text — small and hard to tap on a phone. I changed it to `width: 100%` with `display: block` on the links so they span the full width and are easy to tap.
+The AI initially wrote the mobile nav CSS with `align-items: center` on `.nav-links`, which made each link only as wide as its text, which made it small and difficult to tap on my phone. I changed it to `width: 100%` with `display: block` on the links so that they span the full width and easier tapping.
